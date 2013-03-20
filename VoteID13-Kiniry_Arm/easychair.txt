@@ -1,0 +1,6 @@
+Title:	Language-based Security Failures in the Norwegian Remote Voting System
+Keywords:	
+static analysis
+language-based security
+software engineering
+Abstract:	The deployment of the Norwegian Remote Voting System takes some steps toward best practices with regards to transparency in the development process and artifacts of a national evoting system. To assist the Norwegian authorities, we have analyzed critical parts of this system using automated static analysis tools, with a focus on language-based approach to information security, and manual code and architecture inspection. With only a relatively small amount of work, we found a number of systematic problems in the published implementation. We suspect that the problems we have found thus far are only the tip of the iceberg. Based upon this analysis, we recommend a number of changes, to not just this particular system, but the design and development of evoting systems in the general.
