@@ -1,0 +1,26 @@
+Title:	Formal Model-based Validation for Tally Systems
+
+Keywords:	
+formal methods
+model-based testing
+tally systems
+
+Abstract: Existing commercial and open source e-voting systems have
+horrifically poor testing frameworks.  Most tally systems, for
+example, are tested by re-running all past elections and seeing if the
+new system gives the same answer as an older, perhaps erroneous,
+system did. This amounts to a few dozen system tests and, typically,
+little-to-no unit tests. These systems are used today in a dozen
+countries to determine the outcome of national elections. This
+state-of-affairs cannot continue.
+
+In this work, the ballot counting process for one of the most complex
+electoral schemes used in the world, Proportional Representation by
+Single Transferable Vote (PR-STV), is mechanically formally
+modeled. The purpose of such a formalization is to generate, using an
+algorithm of our design, a complete set of non-isomorphic test cases
+per electoral scheme, once and for all. Using such a system test
+suite, any digital election technology (proprietary or open source)
+can be rigorously evaluated for correctness. Doing so will vastly
+improve the confidence experts have---and can only improve the level
+of trust citizens have---in these digital elections systems.

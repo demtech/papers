@@ -1,0 +1,18 @@
+\usepackage{color}
+\usepackage{listings}
+
+
+%\newcommand{\comment}[1]{\textcolor{red}{#1}}
+\definecolor{keywordcolor}{rgb}{0.5,0,0.33}
+\definecolor{identifiercolor}{rgb}{0,0,0.75}
+\definecolor{commentcolor}{rgb}{0.25,0.5,0.37}
+ 
+\lstdefinelanguage{bon}
+{morekeywords={class_chart,indexing,explanation,part,query,command,constraint,end,deferred,effective,persistent,ensure,invariant,feature,class,static_diagram,component,old,inherit},
+morekeywords={[2]ALARM,ALARM_CLOCK,CLOCK,LOGICAL_CLOCK,CONCEPTS_AND_RELATIONS,INTEGER},
+    morecomment=[l]{--},
+    morestring=[b]",
+    morestring=[d]'
+  }[keywords,comments,strings]
+
+\lstdefinestyle{bon}{language={bon},showstringspaces={false},basicstyle={\ttfamily\mdseries},keywordstyle={\color{keywordcolor}\ttfamily},keywordstyle={[2]\color{black}\ttfamily\bfseries},identifierstyle={\color{identifiercolor}\ttfamily\mdseries},commentstyle={\color{commentcolor}},frame=lines}

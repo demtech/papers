@@ -1,0 +1,112 @@
+Call for Papers
+Vote-ID 2013
+Fourth international conference on E-voting and Identity
+17 - 19 July 2013, University of Surrey, Guildford, UK
+
+http://www.voteid13.org
+
+
+Important Dates
+---------------
+Submission deadline: March 11, 2013
+Notification: April 26, 2013
+Camera-ready version: May 13, 2013
+Event:
+Special session: demos of voting systems, Wednesday 17th morning.
+Conference: 17 midday - 19 midday July 2013.
+
+Motivation and Scope
+--------------------
+
+Electronic voting is a very active research area covering a broad range of
+issues, from computer security and cryptographic issues to human
+psychology and legal issues. The aim of Vote-ID is to bring together
+researchers and practitioners from academia, industry and governmental
+institutions, all working on e-voting systems. The scope covers all
+aspects of electronic voting systems, including, but not limited to:
+
+* design and evaluation of e-voting systems
+* security requirements and formal analysis
+* voter authentication and identity management
+* cryptographic voting schemes
+* verifiable election technologies
+* methods for reconciling voter identification with vote privacy
+* usability and accessibility
+* deployment and lifecycle concerns
+* implementation issues and trade-offs
+* legal, political and other interdisciplinary issues
+
+The proceedings of VoteID 2013 will be published as part of the
+Springer LNCS series.  The proceedings of VoteID 2007, VoteID 2009 and
+VoteID 2011 appeared as volumes 4896, 5767 and 7187 in Springer LNCS.
+The proceedings will also be made available under open access on the
+University of Surrey non-commercial archival repository, and authors
+will be required to provide their copies of accepted papers for this
+purpose.
+
+Paper Submission Guidelines
+---------------------------
+
+Authors are invited to submit papers describing original work.  Case
+studies of deployed systems are welcomed, so long as there is
+sufficient originality and rigour in their design or analysis to
+constitute scientific research. Submissions must not substantially
+duplicate work that any of the authors has published elsewhere or has
+submitted in parallel to any other conference or workshop with
+proceedings. Submissions should be anonymous, with no author names,
+affiliations, acknowledgement or obvious references. Each submission
+should have a contact author who should provide full contact
+information (email, phone, fax, mailing address). At least one author
+of each accepted paper will be required to present the work at the
+conference.  Papers must be formatted in LaTex, using the Springer
+LNCS LaTex style, and submitted as PDF files. Please check at
+http://www.springer.de/comp/lncs/ for style and formatting
+guidelines. The length of the submitted paper should not exceed 15
+pages, excluding the bibliography and appendices, using the Springer
+LNCS style.
+
+Voting System Demonstrations
+----------------------------
+
+We also invite demonstrations of electronic voting systems, to be
+presented in an open session on Wednesday morning.  Participation is open
+to all, but we request a two-page summary by 1st July describing the
+system's requirements and properties, such as:
+* whether the system is intended for remote or attendance voting
+* which types of elections it accommodates
+* whether it addresses the needs of voters with disabilities
+* what sort of verifiability it provides
+* the extent to which it guarantees vote privacy
+* whether it has been deployed in a real election
+* where to go for more information
+
+Organisation
+------------  
+General chair:
+Steve Schneider (University of Surrey, UK)
+
+Program chairs:
+James Heather  (University of Surrey, UK)
+Vanessa Teague  (University of Melbourne, Australia)
+
+Program Committee:
+
+Josh Benaloh (Microsoft Research, USA)
+Jeremy Clark (Carleton University, Canada)
+Paul Gibson (Telecom SudParis, France)
+Joe Hall (Center for Democracy and Technology, Washington, USA)
+James Heather (University of Surrey, UK)
+Hugo Jonker (University of Luxembourg, Luxembourg)
+Reto Koenig (Bern University of Applied Sciences, Switzerland)
+Helger Lipmaa (University of Tartu, Estonia)
+Olivier Pereira (Université Catholique de Louvain, Belgium)
+Mark Ryan (University of Birmingham, UK)
+Peter Ryan (University of Luxembourg, Luxembourg)
+Berry Schoenmakers (University of Eindhoven, The Netherlands)
+Vanessa Teague (University of Melbourne, Australia)
+Melanie Volkamer (TU Darmstadt, Germany)
+Poorvi Vora (George Washington University, USA)
+David Wagner (Berkeley, USA)
+Douglas Wikström (KTH Royal Institute of Technology, Sweden)
+Zhe Xia (University of Surrey, UK)
+

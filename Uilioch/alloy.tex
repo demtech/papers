@@ -1,0 +1,27 @@
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}
+
+\lstdefinelanguage{Alloy}
+{morekeywords={abstract, all, and, as, assert, but, check, disj, else,
+  exactly, extends, fact, for, fun, iden, if, iff, implies, in, Int,
+  int, let, lone, module, no, none, not, one, open, or, part, pred,
+  run, seq, set, sig, some, sum, then, univ},
+sensitive=true,
+morecomment=[l][\small\itshape]{--},
+morecomment=[l][\small\itshape]{//},
+morecomment=[s][\small\itshape]{/*}{*/},
+tabsize=1,
+literate={->}{{$\to$}}1 {^}{{$\mspace{-3mu}\widehat{\quad}\mspace{-3mu}$}}1
+ {<}{$<$ }2 {>}{$>$ }2 {>=}{$\geq$ }2 {=<}{$\leq$ }2
+ {<:}{{$<\mspace{-3mu}:$}}2 {:>}{{$:\mspace{-3mu}>$}}2
+ {=>}{{$\Rightarrow$ }}2 {+}{$+$ }2 {++}{{$+\mspace{-8mu}+$ }}2
+ {\~}{{$\mspace{-3mu}\widetilde{\quad}\mspace{-3mu}$}}1
+ {!=}{$\neq$ }2 {*}{${}^{\ast}$}1 {.}{$\cdot$}1
+ {\#}{$\#$}1
+}
+
+\definecolor{java-keywordcolor}{rgb}{0.5,0,0.33}
+\definecolor{java-identifiercolor}{rgb}{0,0,0.75}
+\definecolor{java-commentcolor}{rgb}{0.0,0.0,0.0}
+
+\lstdefinestyle{alloy}{language={alloy},showstringspaces={false},basicstyle={\footnotesize\ttfamily\mdseries},keywordstyle={\color{java-keywordcolor}\ttfamily},identifierstyle={\color{java-identifiercolor}\ttfamily\mdseries},commentstyle={\color{java-commentcolor}},frame=lines}

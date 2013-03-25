@@ -1,0 +1,217 @@
+----------------------- REVIEW 1 ---------------------
+PAPER: 95
+TITLE: Modeling Test Cases for Voting: Using the Alloy Model Finder to
+Derive Test Cases for PR-STV Elections
+AUTHORS: Dermot Cochran and Joseph Kiniry
+
+OVERALL EVALUATION: 1 (weak accept)
+REVIEWER'S CONFIDENCE: 3 (medium)
+
+----------- REVIEW -----------
+
+The paper is an interesting, though quite simple, analysis of voting
+system.
+
+There are a number of tangential details mentioned in passing about
+which the authors do not seem to have thought deeply.  For instance,
+in the abstract, you say that the purpose is to generate a set of test
+cases per electoral scheme once and for all.  But having done so, it
+is of course possible to design systems that will pass your test cases
+but still contain bugs (malicious or accidental).  So while there is
+still great value in your work, you have gone overboard on what it can
+and cannot do.
+
+Another area of shallowness is the statement in the conclusion that
+you have achieved full statement coverage.  Statement coverage is a
+poor indicator of quality, and moreover you provide something deeper
+than that -- some kind of functional coverage.  Another sentence in
+the conclusion uses the term "code coverage", where again, I think you
+are giving something more -- even though of course passing your tests
+does not guarantee that the system is correct!  You should first be
+clear in your own mind what you mean, then you should present a
+serious discussion of coverage rather than mentioning it for the first
+time in the conclusion.
+
+I recommend on tuning down the "political" tone of the authors, things
+like "This state -of-affairs cannot continue" in the abstract for
+example. In the seventh line of the second page ("would simply be no
+quesation of using electronic voting") - sometimes people are using
+automatic systems even when it increase the error-rate, postal service
+for example.
+
+At footnote 4 on page 2, you probably mean privacy instead of security
+aspects.
+
+The combinatorial explanation, IMHO, is redundant - one can reffer to
+Appendix B and the last two lines on page 5 are confusing.
+
+Why haven't you used Q in the table at the bottom on page 7?
+
+In the definition of (L) at the fourth line from the end of page 11
+one should add a conjunction condition that sum of B is smaller than
+the sum of A.
+
+You should explain abbreviations the first time you use them (to make
+if more reader friendly for layman in the field:
+
+* "IRV: on third line of section 1.2 (should be Instant Runoff Voting).
+* "Z and B specification" on the second line of page 4
+* "CLEAN" in the third line of the second paragraph of page 4 (I know
+  that it appeared in "Votail: PR-STV Ballot Counting Software for
+  Irish Elections" which was published at FoVeOOS 2010
+  (http://www.demtech.dk/chrome/site/papers/CochranKiniry10.pdf)) but
+  it is not clear there too what the real meaning is.
+* "Alloy" in the fifth line of section 2 (add a link to
+  http://alloy.mit.edu/community for example).
+
+Some typographical comments:
+
+The author affiliations is numbered with the same numbering system of
+the footnotes - this cause the first footnote to get the number 3
+instead of 1.
+
+At footnote 5 on age 2, there is an extra (double) space at "Dail
+Eireann".  Missing ending point in footnote 6.
+
+Third line above the figure in page 3 - I recommend replacing "their
+do" with "number of votes for them does".
+
+Candidates should not appear twice on the third line of section 2.1
+
+Add vertical separation lines to the tables, to help the reader divide
+the title correctly (see, for example, at the bottom of page 6).
+
+Extra "'" at the end of line 19 of page 10.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 95
+TITLE: Modeling Test Cases for Voting: Using the Alloy Model Finder to Derive Test Cases for PR-STV Elections
+AUTHORS: Dermot Cochran and Joseph Kiniry
+
+OVERALL EVALUATION: 1 (weak accept)
+REVIEWER'S CONFIDENCE: 4 (high)
+
+----------- REVIEW -----------
+The paper advocates modelling and systematic test generation for a
+class of complex electoral schemes with transferable votes. It focuses
+on functional correctness rather than security.
+
+The resulting test suites are clearly useful. Their generation 
+is also technically interesting, reasonably challenging, and 
+carefully explained.
+
+I was expecting more detailed results on the tests, for all variants
+described in the appendix. Also, it is not entirely clear that the
+test generation would scale up to large numbers of seats & candidates.
+
+I miss a discussion of the other aspects of the software, such as its
+I/O mechanisms and its confidentiality (as the software should
+probably not leak any information besides the election results).
+
+The testing of non-deterministic and random cases in the schemes also
+deserve more discussion.
+
+"let be T" should be "let T"
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 95
+TITLE: Modeling Test Cases for Voting: Using the Alloy Model Finder to Derive Test Cases for PR-STV Elections
+AUTHORS: Dermot Cochran and Joseph Kiniry
+
+OVERALL EVALUATION: -1 (weak reject)
+REVIEWER'S CONFIDENCE: 3 (medium)
+
+----------- REVIEW -----------
+Summary:
+
+Electronic voting systems have to provide accurate results for even
+the most complicated voting mechanisms like Proportional
+Representation by Single Transferable Vote (PR-STV). They therefore
+need to be rigorously tested before they can be used in real
+elections. The paper describes the process of using the Alloy model
+checker to create test cases for an electronic implementation of the
+PR-STV voting mechanism. The contributions are a case study describing
+the process of modeling the PR-STV voting mechanism in Alloy’s
+modeling language, the resulting model, the description of the test
+case generation technique, and the results of running the tests on an
+actual implementation of this voting mechanism.
+
+Judgment:
+
+The paper is very readable and the results are interesting but I think
+the result section and related works should be fleshed out. The result
+section talks about the resulting test cases of the process which the
+authors should describe in more detail. It is unclear how many test
+cases were produced and how much time it took to produce them. Also I
+am not convinced that statement coverage is an adequate metric for the
+quality of the resulting test cases. The related works part doesn’t
+reference similar work for automated test generation but the authors
+mention that such work exists.  Overall I believe the paper is not
+quite ready for TACAS. Hence, I gave a score of -1.
+
+Details:
+Page 1:
+
+“Most tally systems, for example, are tested by re-running all past
+elections and seeing if the new system gives the same answer as an
+older, perhaps erroneous, system did.” “Tally systems” is plural, “new
+system” is singular I believe you should keep it either in plural or
+singular.
+
+Except for the related works part the introduction does not address
+the technical aspects enough and is mainly focused on the voting
+scheme.
+
+Page 4:
+
+“There is, of course, a large amount of work in the field of model
+checking and test generation, but not directly related to voting as a
+case study and therefore not referenced in this paper." I believe the
+authors should address work that is similar from a technical
+perspective but done in a different domain to make their contribution
+clearer. They mention that such work exists in Section 4 but don’t
+reference it.
+
+“In a plurality voting scheme the maximum number of preferences is
+one, otherwise the maximum length of a ballot is the number of
+candidates in the election.” Should be “one. Otherwise, the”
+
+Page 9:
+
+“What follows is a fairly straightforward exercise of applying model
+finding to the problem of test case generation. While this idea, at
+its core, is not novel, the use of Alloy for such generation,
+particularly for critical systems such as election tally systems, is
+completely novel.” The authors should provide a citation to such
+previous work. Because it seems to be similar work with a different
+tool it would be good to reference it. It would also be good to add
+this to the related works part and discuss the
+similarities/differences between them.
+
+“We must derive from an outcome O a vector of ballots B that
+guarantee…” Change guarantee to guarantees.
+
+Page 12:
+
+“We have used our methodology to test Votail, the aforementioned
+rigorously engineered tally system for Irish PR-STV” I believe some
+more information about the characteristics of system under test would
+be interesting, how many lines of code does it have, how many
+conditions…
+
+“We have achieved full statement coverage…” I am not sure if statement
+coverage alone is an adequate metric for the quality of a test
+suite. Perhaps the authors could also provide results related to
+condition coverage.
+
+“…with only seven candidates in a three seat election…” In my opinion
+the authors should describe the resulting test suite in more detail it
+is not quite clear to me what the actual test suite looks like.
+
+Page 14:
+
+“Single Winner Plurality Voting” and “Instant Runoff Voting” I feel
+that these two explanations should be in the paper to make the paper
+more self-contained.

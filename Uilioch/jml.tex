@@ -1,0 +1,16 @@
+% \usepackage[usenames,% dvipsnames
+% ]{color}
+\usepackage{listings}
+
+%\newcommand{\comment}[1]{\textcolor{red}{#1}}
+\definecolor{java-keywordcolor}{rgb}{0.5,0,0.33}
+\definecolor{java-identifiercolor}{rgb}{0,0,0.75}
+\definecolor{java-commentcolor}{rgb}{0.0,0.0,0.0}
+
+\lstdefinestyle{jml}{language={java},showstringspaces={false},basicstyle={\small\ttfamily\mdseries},
+morekeywords={requires,ensures,invariant,assignable, pure, non_null,
+ghost, model, spec_public, normal_behavior, constraint, initially,
+old, result, nonnullelements, also, exists, forall, num_of},
+keywordstyle={\color{java-keywordcolor}\ttfamily},
+identifierstyle={\color{java-identifiercolor}\ttfamily\mdseries},
+commentstyle={\color{java-commentcolor}},frame=lines}
